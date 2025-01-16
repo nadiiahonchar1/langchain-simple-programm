@@ -1,11 +1,10 @@
-import { translateText } from "./services/translationService";
-
+import translatedText from "./services/translationServices";
 (async () => {
-  const language = "Italian";
+  const language = "Ukaine";
   const text = "hi!";
 
   try {
-    const translation = await translateText(language, text);
+    const translation = await translatedText(language, text);
     console.log(`Translation: ${translation}`);
   } catch (error) {
     console.error("Error during translation:", error);
